@@ -1,0 +1,48 @@
+*{
+	font-family: Roboto, Arial, sans-serif;
+}
+.content{
+	box-sizing: border-box;
+	height: 300px;
+	padding-top: 28px;
+	padding-bottom: 26px;
+}
+.title{
+	margin-bottom: 22px;
+}
+.title>.name-title{
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 32px;
+}
+.title>.play-title{
+	text-transform: uppercase;
+	font-size: 16px;
+	opacity: 0.8;
+}
+.list-item>.item{
+	width: 210px;
+	margin-right: 5px;
+	float: left;
+}
+.list-item>.item>img{
+	width: 210px;
+}
+.list-item>.item>.title-item{
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 12px;
+}
+.list-item>.item>.channel-item{
+	font-size: 14px;
+	color:gray;
+	line-height: 20px;
+}
+.list-item>.item>.info-item{
+	font-size: 14px;
+	color: gray;
+}
+.list-item>.item>.info-item>div{
+	float: left;
+	margin-right: 10px;
+}

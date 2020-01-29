@@ -1,0 +1,49 @@
+*{
+	font-family: Arial,sans-serif;
+	margin:auto;
+	padding :0px;
+}
+.list_content{
+	margin-top: 20px;
+}
+.content{
+	width: 472px;
+	height: 176px;
+	border-top: 1px solid gray;
+	padding: 17px 0px;
+}
+.content a{
+	text-decoration: none;
+	color: black;
+}
+.tren{
+	padding-bottom: 20px;
+}
+.tren>a:nth-child(1){
+	width: 151px;
+	height: 124px;
+	float: left;
+	display: inline-block;
+	margin-right: 10px;
+}
+.tren>a{
+	font-size: 18px;
+}
+.tren>p{
+	margin-top: 5px;
+	font-size:12px;
+}
+.duoi{
+	margin-left: 15px;
+	clear: both;
+}
+.duoi li{
+	padding-bottom: 5px;
+}
+.duoi li,.duoi a{
+	font-size: 12px;
+	color: gray;
+}
+.duoi li:hover,.duoi a:hover,.tren a:hover{
+	color:red;
+}

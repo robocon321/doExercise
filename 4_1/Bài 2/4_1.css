@@ -1,0 +1,64 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+div.big-news{
+	width:442px;
+	height: 444px;
+}
+div.big-news>a{
+	text-decoration: none;
+	color: black;
+}
+div.big-news>a>img{
+	width: 442px;
+	height: 296px;
+}
+div.big-news>a>.title{
+	font-family: "NotoSans-Bold";
+	font-weight: bold;
+	font-size:22px;
+}
+div.big-news>a>.title:hover{
+	color:brown;
+}
+div.big-news>a>.no-title{
+	width: 15px;
+	height: 15px;
+	font-size: 10px;
+	color: brown;
+	background-image: url(https://vnn-res.vgcloud.vn/ResV9/images/icon-comment-n.svg);
+	background-size: contain;
+	display: inline-block;
+	background-repeat: no-repeat;
+	padding-left: 15px;
+}
+div.big-news>p{
+    font: 400 14px NotoSans, sans-serif;
+}
+.small-news{
+	width: 442px;
+}
+.item{
+	margin-left: 5px;
+	float: left;
+	width: 142px;
+	height:190px;
+}
+.item a.content{
+	text-decoration: none;
+	color: black;
+}
+.item a.content:hover{
+	color:red;
+}
+.item a.content span{
+	display: inline-block;
+	width: 12px;
+	height: 14px;
+	background-image: url(https://vnn-res.vgcloud.vn/ResV9/images/full-icon-common.png);
+	background-position: 88px 200px;
+}
+.item a.content span:hover{
+	background-position: 100px 200px;
+}

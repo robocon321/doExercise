@@ -1,0 +1,35 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.content{
+	width:679px;
+	height: 554px;
+}
+.content>.title {
+	font-family: "Open Sans","segoe ui",Helvetica,Arial,sans-serif;	
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 26px;
+	color: purple;
+	margin-left: 15px;
+}
+.list_music>.item{
+	margin-left: 15px;
+	width: 151px;
+	height: 241px;
+	float: left;
+}
+.list_music>.item img{
+	width: 151px;
+	height: 151px;
+}
+.list_music>.item a{
+	text-decoration: none;
+	color: black;
+	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+	margin-bottom: 15px;
+}
+.list_music>.item:nth-child(4n){
+	margin-right: 15px;
+}

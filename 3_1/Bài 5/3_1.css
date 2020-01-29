@@ -1,0 +1,124 @@
+.title{
+	width: 662px;
+	border-bottom: 1px dashed red;
+}
+.title:after,.title:before{
+	content: "";
+	display: table;
+	clear: both;
+}
+.title>.name_title{
+	float: left;
+	display: inline-block;
+	background-image: url('https://s.vnecdn.net/ione/c/v22/images/graphics/bg_arrow_tim.png');
+	background-repeat: no-repeat;
+}
+.title>.name_title:after{
+	content: "";
+	display: block;
+	float: left;
+}
+.title>.name_title>a{
+	margin-left: 18px;
+	color: black;
+	font-size: 22px;
+	text-decoration: none;
+	font-family: "Roboto Slab", serif;
+}
+.title>.name_title>a>.first_word{
+	color: #650c8f;
+}
+.title>.name_title>a>.last_word{
+	color: #ed008c;
+}
+.title>.list_opt>ul>li{
+	padding: 0px 8px 0px 8px;
+	font-size: 12px;
+	font-family: Arial;
+	float: left;
+	list-style-type: none;
+	border-right: 1px solid #666;
+	display: inline-block;
+	margin-top: -7px;
+}
+.title>.list_opt>ul>li:nth-child(4){
+	border: none;
+}
+.title>.list_opt>ul>li:nth-child(1){
+	margin-left: 17px;
+}
+.title>.list_opt>ul>li>a{
+	text-decoration: none;
+	color: #666;
+}
+
+.content{
+	margin-top: 30px;
+	width: 662px;
+	height: 316px;
+	background-color: #f1e3eb;
+}
+.left{
+	float: left;
+	width: 212px;
+	height: 315px;
+	border-right: 2px solid gray;
+	position: absolute;
+	margin-right: 15px;
+	overflow:hidden;
+}
+.left>img{
+	float: left;
+	width: 212px;
+	height: 315px;
+	box-sizing: border-box;
+}
+.left>a{
+	left: 0;
+	box-sizing: content-box;
+	text-decoration: none;
+	position: absolute;
+	background-color: black;
+	opacity: 0.5;
+	box-sizing: content-box;;
+	bottom: 0px;
+	width: 200px;
+	height: 42px;
+	margin-right: 14px;
+	color: #00cccc;
+	font-family: arial;
+	font-size: 14px;
+	font-weight: 700;
+	padding-top: 13px;
+	padding-right: 12px;
+	padding-bottom: 13px;
+	padding-right: 7px;
+}
+.right{
+	float: right;
+	width: 420px;
+	height: 100%;
+}
+.right>.item{
+	border-bottom: 1px dashed gray;
+	clear: both;
+	width: 420px;
+	height: 98px;
+	margin-top: 7px;
+}
+.right>.item>a{
+	margin-left: 10px;
+	text-decoration: none;
+	color:#333;
+	font: 700 14px/18px arial;
+}
+.right>.item>a>img{
+	width: 138px;
+	height: 83px;
+	float: left;
+}
+.right>.item>p{
+	margin-left: 10px;
+	font: 400 13px/16px arial;
+    color: #000;
+}

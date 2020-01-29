@@ -1,0 +1,86 @@
+.data{
+	width: 2000px;
+	background-color: yellow;
+}
+.data>.big-news{
+	width: 708px;
+	float: left;
+}
+.data>.big-news>.img{
+	margin-bottom: 20px;
+	width: 708px;
+	height: 410px;
+	background-image: url(https://s.vnecdn.net/ngoisao/restruct/c/v30/ngoisao2018/images/graphics/title-buildtop.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 22px;
+	position: relative;
+}
+.data>.big-news>.img>img{
+	position: absolute;
+	right: 0px;
+}
+.data>.big-news>.img>.img-title{
+	position: absolute;
+	bottom: 15px;
+	left: 42px;
+	background-image: -webkit-linear-gradient(left, #0799ff, #21d4fd);
+	color: white;
+	font-size: 16px;
+	padding: 13px;
+}
+.data>.big-news>.title{
+	font-family: arial;
+	font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.data>.big-news>.content{
+	font-size: 20px;
+}
+.data>.side-news{
+	width: 375px;
+	float: left;
+}
+.data>.side-news>.first-news{
+	margin-left: 30px;
+}
+.data>.side-news>.first-news>.img{
+	width: 375px;
+	height: 226px;
+	position: relative;
+}
+.data>.side-news>.first-news>.img>img{
+	width: 375px;
+	height: 226px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.data>.side-news>.first-news>.img>div{
+	position: absolute;
+	padding: 10px;
+	background-image: -webkit-linear-gradient(left, rgba(132,25,253,0.8), rgba(87,178,251,0.6));
+	bottom: 7px;
+	left: 7px;
+}	
+.data>.side-news>.first-news>p{
+	font-weight: bold;
+	font-size: 20px;	
+	margin-top: 0px;
+}
+.data>.side-news>.next-news{
+	border-top: 1px solid gray;
+	width: 375px; 
+	margin-left: 30px;
+	clear: both;
+}
+.data>.side-news>.next-news>.content{
+	margin-top: 0px;
+	padding: 0px;
+	width: 230px;
+	float: left;
+}
+.data>.side-news>.next-news>img{
+	float: right;
+	margin-top: 25px;
+}
