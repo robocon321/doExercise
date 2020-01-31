@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.sidebar{
+	padding-left: 13px;
+	box-sizing: border-box;
+	height: 100%;
+	display: inline-block;
+	position: fixed;
+	width: 110px;
+	background-color: black;
+}
+.sidebar>a{
+	text-decoration: none;
+	font-size: 27px;
+	display: block;
+	color: #C5C5C5;
+}
+
+.sidebar>a:hover{
+	color: white;
+}
+.main{
+	position: absolute;
+	left: 110px;
+	margin-left: 10px;
+}
+.main>p{
+	font-size: 22px;
+	margin-top: 16px;
+}
