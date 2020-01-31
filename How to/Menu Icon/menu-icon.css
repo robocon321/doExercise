@@ -1,0 +1,33 @@
+body {
+    margin: 150px;
+    padding: 0px;
+}
+
+.child {
+    height: 40px;
+    width: 500px;
+    background-color: black;
+    margin-top: 120px;
+    transition-duration: 1s;
+}
+
+.child:nth-child(1) {
+    margin-top: 0px;
+}
+
+.parent {
+	cursor: pointer;
+    display: inline-block;
+}
+
+.clicked:nth-child(1){
+	transform: rotate(-45deg) translate(-75px, 176px);	
+}
+
+.clicked:nth-child(3){
+	transform:  rotate(45deg) translate(-50px,-150px);
+}
+
+.clicked:nth-child(2) {
+	opacity: 0;
+}
