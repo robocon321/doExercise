@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tab-content {
+    height: 300px;
+    width: 100%;
+    display: none;
+    text-align: center;
+    padding-top: 140px;
+    font-size: 30px;
+}
+
+.tab-link{
+	cursor: pointer;
+	font-size: 25px;
+	display: inline-block;
+	width: 25%;
+	padding: 20px 0px;
+	float: left;
+	border: none;
+	transition-duration: 0.7s;
+	background-color: #D2D2D2;
+}
+.tab-link:hover{
+	background-color: #C8C8C8;
+}
+.open{
+	display: block;
+	background-color: #FFA5A5;
+}
+.active{
+	background-color: #FFA5A5;
+}

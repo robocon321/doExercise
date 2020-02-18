@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tab header</title>
+    <link rel="stylesheet" type="text/css" href="./tabheader.css">
+    <script src="tabheader.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body>
+    <div class="tab-header">
+        <div class="list-tab">
+            <div class="tab-content open" id="tab-content-1">
+                <h1>London</h1>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div class="tab-content" id="tab-content-2">
+                <h1>Paris</h1>
+                <p>Paris is the capital city of France.</p>
+            </div>
+            <div class="tab-content" id="tab-content-3">
+                <h1>Ha Noi</h1>
+                <p>Ha Noi is the capital city of VietNam.</p>
+            </div>
+            <div class="tab-content" id="tab-content-4">
+                <h1>Thuong Hai</h1>
+                <p>Thuong Hai is the capital city of China.</p>
+            </div>
+        </div>
+        <div class="list-button">
+            <button class="tab-link active" id="tab-link-1" onclick="onOpen('#FFA5A5',this)">England</button>
+            <button class="tab-link" id="tab-link-2" onclick="onOpen('#64FF73',this)">France</button>
+            <button class="tab-link" id="tab-link-3" onclick="onOpen('#FFFD4F',this)">VietNam</button>
+            <button class="tab-link" id="tab-link-4" onclick="onOpen('#7679FF',this)">China</button>
+        </div>
+    </div>
+</body>
+
+</html>
