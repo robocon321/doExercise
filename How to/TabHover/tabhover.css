@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.list-tab-link{
+	width: 200px;
+	height: 100vh;
+	background-color: #DDDDDD;
+	float: left;
+}
+.tab-link{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: none;
+	font-size: 25px;
+	background-color: #DDDDDD;
+}
+.tab-link:hover{
+	transition-duration: 0.7s;	
+	background-color: #BDBDBD;
+}
+.list-tab-content{
+	float: left;
+	padding: 20px;
+}
+
+.tab-content{
+	display: none;
+	font-size: 30px;
+}
+
+.tab-content p{
+	margin-top: 20px;
+}
+
+.open {
+	display: block;
+}
+.active{
+	background-color: #ADADAD;
+}
