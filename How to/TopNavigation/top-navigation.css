@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+h1{
+	font-size: 30px;
+}
+p{
+	margin: 15px 0px;
+	font-size: 25px;
+}
+li{
+	text-decoration: none;
+	font-size: 24px;
+	float: left;
+	list-style-type: none;
+	width: 150px;
+	text-align: center;
+	padding: 20px 10px;
+	color: white;
+	cursor: pointer;
+}
+li:hover{
+	box-shadow: 1px 1px 2px 1px #000000;
+	background-color: #9E9E9E;
+}
+ul{
+	overflow: auto;
+	background-color: #7B7B7B;
+}
+
+.active{
+	transition: 0.5s;
+	background-color: #47C153;
+}
+
+@media screen and (max-width: 600px) {
+	li{
+		width: 100%;
+		float: none;
+		display: block;
+	}
+}
