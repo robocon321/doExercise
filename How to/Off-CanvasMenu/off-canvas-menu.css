@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sidenav-push {
+	width: 0px;
+    float: left;
+    overflow: hidden;
+    background-color: #242424;
+    padding-top: 50px;
+    position: relative;
+    height: 100vh;
+    transition-duration: 1s;
+}
+
+.sidenav-push a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.sidenav-push a:hover {
+    color: #C7C7C7;
+}
+
+.sidenav-push a:first-child {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: auto;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.content{
+	float: left;
+	padding-left: 20px;
+}
+
+.content h1{
+	font-size: 30px;
+}
+
+.content p{
+	font-size: 25px;
+	padding: 10px 0px;
+}
