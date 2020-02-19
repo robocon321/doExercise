@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	height: 1000px;
+}
+
+.navbar{
+	width: 100%;
+	background-color: #000000;
+	word-spacing: -4px;
+	position: fixed;
+	top: -100px;
+	transition-duration: 0.7s;
+}
+
+.navbar a{
+	color: #FFFFFF;
+	background-color: black;
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 25px;
+}
+.navbar a:hover{
+	color: #D1D1D1;
+	background-color: #1F1F1F;
+}
+
+h1{
+	font-size: 65px;
+}
+p{
+	padding: 20px;
+	font-size: 55px;
+}
+.scroll{
+	top: 0px;	
+}
