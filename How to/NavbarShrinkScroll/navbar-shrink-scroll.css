@@ -1,0 +1,54 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+}
+
+.navbar {
+	transition-duration: 1s;
+    width: 100%;
+    padding: 100px;
+    background-color: #F3F3F3;
+    word-spacing: -4px;
+    overflow: hidden;
+}
+
+.right {
+    float: right;
+}
+
+.right a {
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.right a:hover {
+    text-shadow: 1px 1px 2px #3F3F3F;
+}
+
+.left {
+    float: left;
+}
+
+.left img {
+	transition-duration: 1s;
+    height: 90px;
+    width: 120px;
+    mix-blend-mode: darken;
+}
+
+.content h1 {
+    font-size: 55px;
+}
+
+.content p {
+    padding: 20px 0px;
+    font-size: 45px;
+}
