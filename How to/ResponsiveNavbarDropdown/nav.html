@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive navbar dropdown</title>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script src="nav.js" type="text/javascript" charset="utf-8" async defer></script>
+	<link rel="stylesheet" href="../fontawesome-free-5.11.2-web/css/all.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="#">Home</a>
+		<a href="#">News</a>
+		<a href="#">Contact</a>
+		<div class="dropdown">
+			<button>Dropdown <i class="fas fa-caret-down"></i></button>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</div>
+		<a href="#">Search</a>
+		<a href="#" onclick="onToggleNavbar()">&equiv;</a>
+	</div>
+	<div class="main">
+		<h1>Responsive Topnav with Dropdown</h1>
+		<p>Resize the browser window to see how it works</p>
+		<p>Hover over the dropdown button to open the dropdown menu.</p>
+	</div>
+</body>
+</html>
