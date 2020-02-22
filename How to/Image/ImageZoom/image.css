@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 20px;
+}
+
+h1{
+	font-size: 45px;
+}
+
+p{
+	font-size: 35px;
+	padding: 20px 0px;
+}
+
+.image-container{
+	position: relative;
+}
+
+.image-container img{
+	width: 600px;
+	height: 400px;
+}
+
+.image-lens{
+	position: absolute;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	border: 1px solid white;
+}
+
+.image-zoom-result{
+	width: 600px;
+	height: 600px;
+	background-color: #E8E8E8;
+}

@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+
+h1{
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+.bg-img{
+	background-image: url('https://q-cf.bstatic.com/images/hotel/max1024x768/175/175016579.jpg');
+	position: relative;
+	height: 1000px;
+	background-size: cover;
+}
+
+.container{
+	width: 30%;
+	background-color: white;
+	margin: 20px;
+	padding: 20px;
+	position: fixed;
+	right: 0px;
+}
+
+.container h2{
+	margin-top: 20px;
+}
+
+.container input{
+	margin-top: 10px;
+}
+
+.container input{
+	border: none;
+	background-color: #DFDFDF;
+	padding: 20px;
+	width: 100%;
+	font-size: 20px;
+}
+
+.container button{
+	background-color: #00BB80;
+	color: white;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px;
+}

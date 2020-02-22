@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+            <div class="text">Look his sky</div>
+        </div>
+        <div class="slide fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://tvlk-prod-asset.imgix.net/v2/generic/C8Kj5%2FdCnE75BMxGpYYdcJVuEQbV3CnmF8ONfpQKM2nSWWBIIZYawS1qMa7rEFnffYG%2Bi9OZUEt8PuKdInSV4NhZ1LlG4iuV6rp4mp8FO2uJwIFDbz%2FtKBkJl3SKoObz3Xz3x%2FnYAfcq%2BWVIq6QecI4HpNOAmj0Pq8TA0GvRcvZ51ec9s%2BNRDwS9olJGFuR%2FYO4ApUCkFvMe2EIoHCdb4zs9GFSVTdgeVXYdd%2F4l5i9YrJ7BcrUZIdkLQQ8LOHxyfP9IpmvV5Oy5hmN5PMpH4klHEMTacVKGtfN8IGUVinuaFpGpj9zEFjaEw7NdwLwjorsd6k7plyCrS3ROWU6tSA%3D%3D?auto=compress%2Cformat&cs=srgb&ixlib=java-1.1.12&q=30&tv-dynamic=true&h=512" />
+            <div class="text">Landmark</div>
+        </div>
+        <div class="slide fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://i.ytimg.com/vi/3rdM5fBjnB8/maxresdefault.jpg" />
+            <div class="text">Break dance</div>
+        </div>
+        <a class="prev" href="#" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" href="#" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="dots">
+        <div class="dot" onclick="moveToPage(1)"></div>
+        <div class="dot" onclick="moveToPage(2)"></div>
+        <div class="dot" onclick="moveToPage(3)"></div>
+    </div>
+    <script>
+    var slides = document.getElementsByClassName("slide");
+    var index = 1;
+    var dots = document.getElementsByClassName("dot");
+
+    function plusSlides(n) {
+        index = index + n;
+        if (index > 3) {
+            index = 1;
+        }
+        if (index < 1) {
+            index = 3;
+        }
+        move(index);
+    }
+
+    function moveToPage(n) {
+        move(n);
+    }
+
+    function move(n) {
+        for (var slide of slides) {
+            slide.style.display = "none";
+        }
+        for (var dot of dots) {
+            dot.classList.remove("active")
+        }
+        slides[n - 1].style.display = "block";
+        dots[n - 1].classList.add("active");
+    }
+    move(1);
+    </script>
+</body>
+
+</html>

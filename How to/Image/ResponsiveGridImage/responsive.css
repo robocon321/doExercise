@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h1{
+	font-size: 55px;
+}
+
+p{
+	font-size: 25px;
+	padding: 20px 0px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col{
+	flex: 25%;
+}
+
+.col img{
+	width: 100%;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1200px){
+	.col{
+		flex: 50%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.col{
+		flex: 100%;
+	}
+}

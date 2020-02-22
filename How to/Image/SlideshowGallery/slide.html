@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slideshow gallery</title>
+    <link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide">
+            <div class="numbertext">1 / 6</div> 
+            <img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Image">
+        </div>
+        <div class="slide">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://www.wyzowl.com/wp-content/uploads/2019/09/YouTube-thumbnail-size-guide-best-practices-top-examples.png" alt="Youtube">
+        </div>
+        <div class="slide">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://www.leskompi.com/wp-content/uploads/2019/07/Cara-Menghapus-Folder-Thumbnail.png" alt="File">
+        </div>
+        <div class="slide">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://s3.amazonaws.com/kp-blog/wp-content/uploads/2018/07/03165544/Thumbnail-Youtube-o-que-%C3%A9-8-dicas-de-como-fazer-e-principais-ferramentas.jpg" alt="Thumbnail">
+        </div>
+        <div class="slide">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://cdn6.f-cdn.com/contestentries/1162950/21695385/59ea4d6c34134_thumb900.jpg" alt="HTML">
+        </div>
+        <div class="slide">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://specials-images.forbesimg.com/imageserve/5d9f42214223bf0006b825b5/960x0.jpg?fit=scale" alt="Hacker">
+        </div>
+        <a class="prev" href="#" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" href="#" onclick="plusSlides(1)">&#10095;</a>
+        <p class="caption">Hello world</p>
+        <div class="row">
+            <div class="column" onclick="moveToIndex(1)">
+                <img onclick="moveToIndex(1)" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="Image" />
+            </div>
+            <div class="column" onclick="moveToIndex(2)">
+                <img onclick="moveToIndex(2)" src="https://www.wyzowl.com/wp-content/uploads/2019/09/YouTube-thumbnail-size-guide-best-practices-top-examples.png" alt="Youtube" />
+            </div>
+            <div class="column" onclick="moveToIndex(3)"> <!-- here -->
+                <img onclick="moveToIndex(3)" src="https://www.leskompi.com/wp-content/uploads/2019/07/Cara-Menghapus-Folder-Thumbnail.png" alt="File" />
+            </div>
+            <div class="column" onclick="moveToIndex(4)">
+                <img onclick="moveToIndex(4)" src="https://s3.amazonaws.com/kp-blog/wp-content/uploads/2018/07/03165544/Thumbnail-Youtube-o-que-%C3%A9-8-dicas-de-como-fazer-e-principais-ferramentas.jpg" alt="Thumbnail" />
+            </div>
+            <div class="column" onclick="moveToIndex(5)">
+                <img onclick="moveToIndex(5)" src="https://cdn6.f-cdn.com/contestentries/1162950/21695385/59ea4d6c34134_thumb900.jpg" alt="HTML" />
+            </div>
+            <div class="column" onclick="moveToIndex(6)">
+                <img onclick="moveToIndex(6)" src="https://specials-images.forbesimg.com/imageserve/5d9f42214223bf0006b825b5/960x0.jpg?fit=scale" alt="Hacker" />
+            </div>
+        </div>
+    </div>
+    <script>
+    	var slides=document.getElementsByClassName("slide");
+    	var columns=document.getElementsByClassName("column");
+    	var index=1;
+
+    	function plusSlides(n){
+    		index=n+index;
+    		if(index>6){
+    			index=1;
+    		}
+    		if(index<1){
+    			index=6;
+    		}
+    		move(index);
+    	}
+
+    	function moveToIndex(n){
+    		move(n);
+    	}
+
+    	function move(n){
+    		for(var slide of slides){
+    			slide.style.display="none";
+    		}
+    		for(var column of columns){
+    			column.style.opacity="0.6";
+    		}
+    		slides[n-1].style.display="block";
+    		columns[n-1].style.opacity="1";
+    		document.getElementsByClassName("caption")[0].textContent=columns[n-1].childNodes[1].alt;
+    	}
+    	move(1);
+    </script>
+</body>
+
+</html>

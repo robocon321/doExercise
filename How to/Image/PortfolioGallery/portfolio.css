@@ -1,0 +1,60 @@
+body{
+	background-color: #EDEDED;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+h1{
+	display: block;
+	text-align: center;
+	padding: 30px;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 35px;
+	text-transform: uppercase;
+	padding: 20px 0px;
+}
+p{
+	padding: 10px 0px;
+	font-size: 25px;
+}
+
+.row{
+	margin: 10px -10px;
+}
+
+.row>.column{
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.content{
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
+	padding: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+	.row>.column{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.row>.column{
+		width: 100%;
+	}
+}
