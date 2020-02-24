@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	padding: 10px;
+}
+
+.notification{
+	font-size: 25px;
+	text-decoration: none;
+	color: white;
+	background-color: #454545;
+	padding: 20px;
+	display: inline-block;
+	position: relative;
+	border-radius: 4px;
+}
+.notification:hover {
+	background-color: #FF0000;
+}
+.notification .badge{
+	background-color: #FF0000;
+	border-radius: 50%;
+	padding: 10px 15px;
+	display: inline-block;
+	text-align: center;
+	top: -20px;
+	right: -20px;
+	position: absolute;
+}
+
