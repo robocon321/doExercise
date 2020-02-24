@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    padding: 5px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+}
+
+button {
+    color: white;
+    background-color: #3297FF;
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+}
+button:hover{
+	background-color:#007EFF;
+}
+
+body>button {
+    float: left;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.dropdown>button {
+    border-left: 1px solid black;
+}
+
+.dropdown-content {
+    background-color: #EEEEEE;
+    box-shadow: 1px 1px 5px 1px #8D8D8D;
+    display: none;
+}
+
+.dropdown-content a {
+	width: 200px;
+    color: black;
+    font-size: 25px;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover{
+	background-color: #D2D1D1;
+}
