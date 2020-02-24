@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll to top</title>
+    <link rel="stylesheet" type="text/css" href="button.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Scroll Down</h1>
+        <p>This example demonstrates how to create a "scroll to top" button that becomes visible <b>when the user starts to scroll the page.</b></p>
+        <p>Đối với học sinh từ cấp mầm non cho đến THCS, Bộ GD-ĐT có thể xem xét quyết định cho nghỉ học thêm 2 tuần sau đó quyết định cụ thể thời điểm đi học tùy theo diễn biến dịch bệnh.</p>
+        <p>ĐH Bách khoa Hà Nội lùi tiếp lịch học đến ngày 2/3
+            Chiều nay, 23/2, Thủ tướng Nguyễn Xuân Phúc chủ trì cuộc họp Thường trực Chính phủ về tình hình phòng chống dịch Covid-19.
+            Phát biểu trong cuộc họp, Bộ trưởng, Chủ nhiệm VPCP Mai Tiến Dũng kiến nghị, Bộ GD-ĐT theo thẩm quyền quyết định cho</p>"Học sinh THPT đã lớn, có thể quay lại đi học từ 23/2 để tránh ảnh hưởng đến học hành, thi cử"<p>
+            Chính thức: Học sinh Hà Nội đi học trở lại từ 2/3
+            Trường học sinh, sinh viên trung học, phổ thông, đại học, cao đẳng, trung cấp sư phạm đi học trở lại trong toàn quốc trong ngày 2/3.</p>
+        Đối với học sinh mầm non và tiểu học, THCS, Bộ GD-ĐT có thể xem xét quyết định cho nghỉ học thêm 2 tuần sau đó quyết định cụ thể thời điểm đi học tùy theo diễn biến dịch bệnh.
+        Bên cạnh đó, Thủ tướng cũng lưu ý, hôm nay chưa chốt là tuần sau cả nước đi học lại mà đến thứ 5, thứ 6 tuần này, tùy tình hình thì Bộ trưởng GD-ĐT mới chốt ngày đi học. Tổng hợp kinh nghiệm quốc tế, Thứ trưởng Bộ Ngoại
+        <p> giao Tô Anh Dũng cho hay tại nhiều nước có ca nhiễm COVID-9 như Singapore, Nhật Bản, Hàn Quốc, Mỹ,… học sinh, sinh viên vẫn đi học bình thường. Trong trường, người học, người dạy cũng không phải đeo khẩu trang. WHO và một số tổ chức quốc tế, ngoại giao đoàn cũng đã khuyến nghị, với tình hình dịch bệnh hiện tại, đã đến lúc Việt Nam xem xét thời điểm cho học sinh, sinh viên đi học trở lại.</p>
+        Ngay tại Trung Quốc, cho đến nay vẫn đang áp dụng 2 hình thức. Trừ thủ đô Bắc Kinh và các tỉnh Hồ Bắc, Cát Lâm, Thiên Tân hiện chưa có quyết định cho học sinh, sinh viên đi học trở lại còn các tỉnh còn lại cơ bản đến đầu tháng 3 sẽ tổ chức đi học trở lại.<p>
+            Đương nhiên, để bảo đảm an toàn vệ sinh dịch tễ, các cơ sở giáo dục, đào tạo đều triển khai các giải pháp tiêu trùng khử độc trường học; rà soát các trường hợp có biểu hiện nghi ngờ; khuyến cáo giáo viên, học sinh rửa tay bằng xà phòng,… cũng như hạn chế một số hoạt động ngoại khoá, tập trung đông người.</p>
+        <button onclick="moveToTop()" style="display: none">Top</button>
+    </div>
+    <script>
+    var btn = document.getElementsByTagName("button")[0];
+    var scroll = document.documentElement.scrollTop;
+    var second = 1000;
+
+    window.onscroll = function() {
+        scroll = document.documentElement.scrollTop
+        console.log(scroll);
+        if (scroll > 0) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function moveToTop() {
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+
+</html>
