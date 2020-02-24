@@ -1,0 +1,74 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+h1{
+	font-size: 35px;
+	padding: 20px 0px;
+}
+
+button{
+	padding: 20px;
+	font-size: 25px;	
+	border: none;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+.button-1{
+	background-color: #00A45D;
+	box-shadow: 0px 9px #929292;
+	border-radius: 10%;
+}
+
+.button-1:active{
+	box-shadow: 0px 5px #494949;
+	transform: translateY(4px);
+}
+
+.button-1:hover{
+	background-color: #00C586;
+}
+
+/* Start button 2 */
+
+.button-2{
+	background-color: #FF7200;
+	width: 150px;
+}
+
+.button-2:hover:after{
+	content: " >>";
+}
+
+/* Start button 3 */
+
+.button-3{
+	background-color: #0010A9;
+	width: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+.button-3:after{
+	content: "";
+	display: block;
+	padding: 150px;
+	background-color: #AEF3FF;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0;
+	position: absolute;
+	transition-duration: 0.6s;
+}
+
+.button-3:active:after{
+	opacity: 1;
+	padding: 0px;
+	transition-duration: 0s;
+}
+
