@@ -1,0 +1,42 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	padding: 10px;
+}
+
+#image-container{
+	position: relative;
+}
+
+img{
+	width: 600px;
+	height: 400px;
+}
+
+h1{
+	font-size: 45px;
+}
+
+p{
+	font-size: 35px;
+	padding: 10px 0px;
+}
+
+input{
+	font-size: 35px;
+}
+
+#image-magnify{
+	cursor: none;
+	position: absolute;
+	border: 2px solid black;
+	border-radius: 50%;
+	top: 0px;
+	width: 100px;
+	height: 100px;
+}
