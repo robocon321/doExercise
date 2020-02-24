@@ -1,0 +1,31 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	padding: 10px;
+}
+
+h1{
+	font-size: 45px;
+}
+
+p{
+	font-size: 35px;
+}
+
+#btn{
+	border: 1px solid #000000;
+	font-size: 25px;
+	padding: 10px;
+	background-color: #4F4F4F;
+	color: white;
+	cursor: pointer;
+}
+
+#dots{
+	display: none;
+}
