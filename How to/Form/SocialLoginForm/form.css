@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    padding: 5px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 15px;
+    padding: 10px 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    position: relative;
+    background-color: #EEEEEE;
+    padding-top: 50px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.col {
+	padding-right: 50px;
+    float: left;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.col a {
+    border-radius: 3px;
+    margin: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.opacity:hover {
+    opacity: 1;
+}
+
+.col i {
+    margin-right: 6px;
+}
+
+.col a:nth-child(1) {
+    background-color: #0044B4;
+}
+
+.col a:nth-child(2) {
+    background-color: #00BDBB;
+}
+
+.col a:nth-child(3) {
+    background-color: #C50000;
+}
+
+input {
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+input[type=button] {
+    color: white;
+    background-color: #007D3E;
+    cursor: pointer;
+}
+
+.vl{
+	position: absolute;
+	height: 50%;
+	width: 1px;
+	border: 2px solid #ddd;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.vl-content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #EAEAEA;
+	width: 30px;
+	height: 30px;
+	padding: 4px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.button{
+	float: left;
+	width: 50%;
+	margin-top: -10px;
+}
+
+.button>input{
+	background-color: black!important;	
+}

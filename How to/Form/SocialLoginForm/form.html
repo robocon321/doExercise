@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Social login form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+    <h2>Responsive Social Login Form</h2>
+    <p>Resize the browser window to see the responsive effect. When the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other</p>
+    <div class="container">
+        <form>
+            <h2>Login with Social Media or Manually</h2>
+            <div class="vl">
+                <div class="vl-content">or</div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="opacity" href="#"><i class="fab fa-facebook-f"></i>Login with Facebook</a>
+                    <a class="opacity" href="#"><i class="fab fa-twitter"></i>Login with Twitter</a>
+                    <a class="opacity" href="#"><i class="fab fa-google"></i>Login with Google+</a>
+                </div>
+                <div class="col">
+                    <p class="hide">Or sign in manually:</p>
+                </div>
+                <div class="col">
+                    <input type="text" name="uname" placeholder="Username">
+                    <input type="text" name="pwd" placeholder="Password">
+                    <input class="opacity" type="button" name="login" value="Login">
+                </div>
+            </div>
+            <div class="row">
+                <div class="button opacity"><input type="button" name="signup" value="Sign up"></div>
+                <div class="button opacity"><input type="button" name="forgot-pwd" value="Forgot password?"></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
