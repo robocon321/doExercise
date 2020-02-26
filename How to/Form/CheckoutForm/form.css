@@ -1,0 +1,117 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	padding: 10px;
+}
+
+h2{
+	font-size: 35px;
+}
+
+p{
+	font-size: 25px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[class|=col]{
+	padding: 20px;
+}
+
+.col-25{
+	flex: 25%;
+}
+
+.col-50{
+	flex: 50%;
+	margin-left: -20px;
+}
+
+.col-75{
+	flex: 75%;
+}
+
+.container{
+	border-radius: 3px;
+	background-color: #DDDDDD;
+	padding: 20px;
+}
+
+label{
+	display: block;
+	font-size: 25px;
+}
+input{
+	font-size: 25px;
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+input[type=checkbox]{
+	width: auto;
+	transform: scale(1.5);
+	margin: 2px;
+}
+
+.card{
+	height: auto;
+	padding: 9px;
+}
+
+.card span{
+	font-size: 40px;
+	padding: 10px 2px;
+}
+
+.card span:nth-child(1){
+	color: #FF0000;
+}
+
+.card span:nth-child(2){
+	color: #1800FF;
+}
+
+.card span:nth-child(3){
+	color: #019698;
+}
+.card span:nth-child(4){
+	color: #9800A1;
+}
+
+button{
+	cursor: pointer;
+	width: 100%;
+	padding: 15px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: #009B5F;
+}
+
+button:hover{
+	background-color: #09BE2B;
+}
+
+.price p{
+	margin: 10px 0px;
+}
+
+@media screen and (max-width: 1200px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+.price span{
+ float: right;
+}
