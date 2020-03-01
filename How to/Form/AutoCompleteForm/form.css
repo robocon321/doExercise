@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body{
+	padding: 10px;
+}
+
+h1{
+	font-size: 35px;
+}
+
+p{
+	font-size: 25px;
+	padding: 10px 0px;
+}
+
+#select-country{
+	float: left;
+}
+
+input[type=text]{
+	font-size: 25px;
+	padding: 5px;
+}
+
+input[type=button]{
+	width: 100px;
+	background-color: #003DA1;
+	color: white;
+	border: none;
+	float: left;
+	font-size: 25px;
+	padding: 7px;
+}
+
+#dropdown{
+	box-shadow: 1px 1px 5px 2px #989898;
+}
+
+.item{
+	padding: 5px;
+	border: 1px solid black;
+}
