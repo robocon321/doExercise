@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.container {
+    padding: 10px;
+    background-color: #DEDEDE;
+    margin: 4px;
+    width: 250px;
+    float: left;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltiptext {
+    position: absolute;
+    background-color: #777777;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.top .tooltiptext {
+    top: -60px;
+    left: 0px;
+}
+
+.left .tooltiptext{
+	left: -120px;
+	top: -10px;
+}
+
+.bottom .tooltiptext{
+	bottom: -60px;
+	left: 0px;
+}
+
+.right .tooltiptext{
+	right: -120px;
+	top: -10px;
+}
+.container .tooltiptext::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.top .tooltiptext::after {
+    bottom: -20px;
+    left: 20px;
+    border-color: #777777 transparent transparent transparent;
+}
+
+.right .tooltiptext::after {
+    border-color:transparent #777777 transparent transparent;
+    left: -20px;
+}
+
+.bottom .tooltiptext::after{
+	top: -20px;
+	left: 20px;
+    border-color: transparent transparent #777777 transparent;	
+}
+
+.left .tooltiptext::after{
+    border-color:transparent transparent transparent #777777;
+    right: -20px;
+}
+
+.container:hover .tooltiptext {
+    display: block;
+}
+
