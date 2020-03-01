@@ -1,0 +1,8 @@
+#myId{
+	font-size: 35px;
+}
+
+#myId::selection{
+	color: red;
+	background-color: #0096FF;
+}
