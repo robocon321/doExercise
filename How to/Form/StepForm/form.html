@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Step form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form id="regForm" onsubmit="return false">
+        <h1>Register:</h1>
+        <div class="tab">
+            Name:
+            <p><input type="text" placeholder="First name..."></p>
+            <p><input type="text" placeholder="Last name..."></p>
+        </div>
+        <div class="tab">Contact Info:
+            <p><input type="text" placeholder="E-mail..."></p>
+            <p><input type="text" placeholder="Phone..."></p>
+        </div>
+        <div class="tab">Birthday:
+            <p><input type="text" placeholder="dd"></p>
+            <p><input type="text" placeholder="mm"></p>
+            <p><input type="text" placeholder="yyyy"></p>
+        </div>
+        <div class="tab">Login:
+            <p><input type="text" placeholder="Username..."></p>
+            <p><input type="text" placeholder="Password..."></p>
+        </div>
+        <div class="btn">
+            <button onclick="prevNext(1)" class="next" id="next">Next</button>
+            <button onclick="prevNext(-1)" class="prev" id="prev">Previous</button>
+        </div>
+        <div class="list-step">
+            <span class="step active"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+    </form>
+    <h2 id="complete">Complete!</h2>
+    <script>
+    var currentStep = 0;
+    var tabs = document.getElementsByClassName("tab");
+    var form = document.getElementById("regForm");
+    var steps = document.getElementsByClassName("step");
+    var complete = document.getElementById("complete");
+    showCurrentTab(0);
+
+    function showCurrentTab(n) {
+        for (var tab of tabs) {
+            tab.style.display = "none";
+        }
+        if (n == 0) {
+            document.getElementById("prev").style.display = "none";
+            tabs[n].style.display = "block";
+        } else if (n == tabs.length - 1) {
+            document.getElementById("next").textContent = "Submit";
+            tabs[n].style.display = "block";
+        } else if (n > tabs.length - 1) {
+            form.style.display = "none";
+            complete.style.display = "block";
+        } else {
+            document.getElementById("prev").style.display = "block";
+            tabs[n].style.display = "block";
+        }
+        fixStepIndicator();
+    }
+
+    function prevNext(n) {
+        if (!validateForm()) {
+            return false;
+        }
+        currentStep += n;
+        if (currentStep < 0) {
+            currentStep = 0;
+        } else if (currentStep > tabs.length - 1) {
+            currentStep = tabs.length - 1;
+        }
+        showCurrentTab(currentStep);
+    }
+
+    function validateForm() {
+        var validate = true;
+        var inputCurrents = tabs[currentStep].getElementsByTagName("input");
+        for (var inputCurrent of inputCurrents) {
+            if (inputCurrent.value == '') {
+                console.log(inputCurrent);
+                inputCurrent.classList.add("invalid");
+                validate = false;
+            }
+        }
+        return validate;
+    }
+
+    function fixStepIndicator() {
+        for (var i = 0; i < currentStep; i++) {
+        	steps[i].classList.remove("active");
+        	steps[i].classList.add("finish");
+        }
+        steps[currentStep].classList.add("active");
+    }
+    </script>
+</body>
+
+</html>
