@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Progress bars</title>
+    <link rel="stylesheet" type="text/css" href="more.css">
+</head>
+
+<body>
+    <div id="progress-container">
+        <div id="progress-bars"></div>
+    </div>
+    <div id="result">0%</div>
+    <button id="run">Run</button>
+    <script>
+    var progressBar = document.getElementById("progress-bars");
+    var result = document.getElementById("result");
+    var run = document.getElementById("run");
+    var second = 0;
+
+    run.addEventListener("click", onRun);
+    var id;
+
+    function onRun() {
+    	clearInterval(id);
+        progressBar.style.width = 0 + "%";
+        result.textContent = 0 + "%";
+
+        id = setInterval(run, 10);
+
+        function run() {
+            var progress = parseInt(result.textContent.substring(0, result.textContent.length - 1));
+            progress++;
+            if (progress >= 100) {
+                progressBar.style.width = progress + "%";
+                result.textContent = progress + "%";
+                clearInterval(id);
+            } else {
+                progressBar.style.width = progress + "%";
+                result.textContent = progress + "%";
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>
