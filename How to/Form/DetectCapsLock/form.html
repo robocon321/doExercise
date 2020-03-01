@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dectect capslock</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+    <h3>Detect Caps Lock</h3>
+    <p>Press the "Caps Lock" key inside the input field to trigger the function.</p>
+    <input id="myId" type="text" value="Some text...">
+    <p id="text" style="color:red">WARNING! Caps Lock is ON</p>
+    <script>
+    var input = document.getElementById("myId");
+    var text = document.getElementById("text");
+
+    input.addEventListener("keyup", function(event) {
+        var x = event.getModifierState("CapsLock");
+        if (x) {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    });
+    </script>
+</body>
+
+</html>
